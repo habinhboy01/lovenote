@@ -1,0 +1,16 @@
+2022-08-23T07:42:01+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\xampp\htdocs\lovenote\wp-content\themes\lovenote_themes\index.php:135
+Stack trace:
+#0 C:\xampp\htdocs\lovenote\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\lovenote\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lovenote\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\lovenote\wp-content\themes\lovenote_themes\index.php on line 135
+
+2022-08-23T07:42:11+00:00 CRITICAL Uncaught Error: Call to undefined function the_description() in C:\xampp\htdocs\lovenote\wp-content\themes\lovenote_themes\index.php:135
+Stack trace:
+#0 C:\xampp\htdocs\lovenote\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\lovenote\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\lovenote\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\lovenote\wp-content\themes\lovenote_themes\index.php on line 135
+

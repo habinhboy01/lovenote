@@ -1,0 +1,4 @@
+2022-07-29T07:17:01+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in C:\xampp\htdocs\lovenote\wp-content\themes\lovenote_themes\product.php on line 51
+
+2022-07-29T07:41:25+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE), expecting end of file in C:\xampp\htdocs\lovenote\wp-content\themes\lovenote_themes\product.php on line 68
+

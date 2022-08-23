@@ -1,0 +1,465 @@
+/*body trang đăng nhập*/
+
+.bg-login {
+	background-image: url(./images/img16.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    margin-bottom: 50px;
+}
+
+.bg-login2 {
+	width: 60%;
+	background: #656812;
+	border-radius: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	padding: 25px 0;
+}
+
+.bg-login2 h1 {
+	font-weight: 400;
+	font-size: 24px;
+	color: white;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.bg-login2 p {
+	margin-bottom: 20px;
+}
+
+.login-username,
+.login-password,
+.login-remember {
+	display: flex;
+	width: 40%;
+    flex-direction: column;
+    text-align: left;
+    margin-right: auto;
+	margin-left: auto;
+}
+
+.login-username input,
+.login-password input {
+	padding-left: 12px;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.login-submit {
+	text-align: center;
+}
+
+.login-submit input {
+	font-weight: 600;
+	font-size: 16px;
+	color: white;
+	background: #FA7436;
+	border-radius: 8px;
+	border: none;
+	padding: 6px 15px;
+}
+
+@media(max-width: 1200px) {
+	.bg-login2 {
+		width: 80%;
+	}
+}
+
+@media(max-width: 991px) {
+	.bg-login {
+		padding-top: 10%;
+	}
+
+	.bg-login2 {
+		width: 100%;
+	}
+}
+
+@media(max-width: 740px) {
+	.login-username,
+	.login-password,
+	.login-remember {
+		width: 80%;
+	}
+}
+
+/*body trang đăng ký*/
+
+.bg-register {
+	text-align: center;
+}
+
+.bg-register2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.btn-register {
+	display: inline-block;
+	color: white;
+    font-weight: 400;
+    line-height: 1.5;
+	background: #FA7436;
+	border-color: #FA7436;
+	text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-register:hover {
+	background: #FA7436;
+	border-color: #FA7436;
+}
+
+#message {
+	color: red;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 450px) {
+	.bg-register {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/*menu pc*/
+
+.bg-header {
+	background: #000000;
+}
+
+.login-register {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.login-register a {
+	color: white;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.login-register li {
+	color: white;
+	padding: 10px 3px;
+	font-weight: bold;
+}
+
+.bg-header2 {
+	background: #656812;
+	border-bottom: 1px solid #E5C6A2;
+	padding-bottom: 10px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 6;
+}
+
+.bg-header3 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search-home2 {
+	font-size: 18px;
+    color: white;
+}
+
+.logo-pc {
+	display: none;
+}
+
+.menu-pc {
+	display: flex;
+	align-items: center;
+	padding-top: 8px;
+}
+
+.menu-pc a {
+	font-weight: 600;
+	font-size: 18px;
+	color: white;
+}
+
+.menu-pc li {
+	padding: 5px 35px;
+}
+
+.bg-mobile,
+.menu-mobile2 {
+	display: none;
+}
+
+/*thanh tìm kiếm home*/
+
+.form-search-home {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.form-search-home input {
+    position: absolute;
+    top: 160%;
+    left: 0;
+    z-index: 2;
+    border: 1px solid silver;
+    padding-left: 10px;
+    height: 30px;
+}
+
+.search-home {
+	background: none;
+	border: none;
+}
+
+.input-search-home {
+	display: none;
+}
+
+/*giảo hàng trang home*/
+
+.cart-home {
+	position: relative;
+}
+
+.quantity-home {
+	background: #5ABF0B;
+	font-weight: 400;
+	font-size: 8px;
+	color: white;
+	padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: -8px;
+}
+
+/*-----------------*/
+
+@media(max-width: 1400px) {
+	.menu-pc li {
+		padding: 5px 20px;
+	}
+}
+
+@media(max-width: 1200px) {
+	.menu-pc li {
+		padding: 5px 12px;
+	}
+}
+
+@media(max-width: 991px) {
+	.bg-header2 {
+		display: none;
+	}
+
+	.bg-mobile {
+		display: block;
+		background: #656812;
+		padding: 10px 0;
+	}
+
+	.bg-mobile2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.menu-mobile {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu-mobile li {
+		padding: 5px 15px;
+	}
+
+	.menu-mobile img {
+		width: 25px;
+		height: 25px;
+	}
+
+	#btn-bar {
+		color: white;
+		font-size: 30px;
+		cursor: pointer;
+		padding-right: 0;
+	}
+
+	.menu-mobile2 {
+		display: none;
+		background: #656812;
+		text-align: center;
+		line-height: 3;
+	}
+
+	.menu-mobile2 li {
+		border-bottom: 1px solid #E5C6A2;
+	}
+
+	.menu-mobile2 a {
+		font-weight: 600;
+		font-size: 18px;
+		color: white;
+	}
+
+	/*giảo hàng home*/
+
+	.quantity-home {
+		padding: 3px 6px;
+		top: -10px;
+    	right: -10px;
+    	font-size: 10px;
+	}
+
+	.form-search-home input {
+		right: 10%;
+		left: unset;
+		height: 35px;
+	}
+}
+
+@media(max-width: 450px) {
+	.logo-mobile {
+		width: 70%;
+	}
+
+	.menu-mobile2 a {
+		font-size: 15px;
+	}
+
+	.menu-mobile img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.menu-mobile li {
+		padding: 5px 10px;
+	}
+
+	#btn-bar {
+		font-size: 20px;
+	}
+}
+
+
+/*footer*/
+
+.bg-footer {
+	background: #656812;
+	padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.text-footer,
+.list-address a {
+	font-weight: 400;
+	font-size: 15px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.text-footer2 {
+	font-weight: 400;
+	font-size: 25px;
+	color: white;
+}
+
+.text-footer2:hover {
+	color: white;
+}
+
+.list-social {
+	display: flex;
+	margin-top: 20px;
+}
+
+.code-qr {
+	padding-left: 20px;
+}
+
+.list-address {
+	margin-top: 20px;
+	line-height: 2;
+}
+
+.text-footer3 {
+	font-weight: 700;
+}
+
+.e-commerce {
+	display: flex;
+}
+
+.e-commerce li {
+	padding-right: 35px;
+}
+
+.line-footer {
+	width: 50%;
+	border-top: 1px solid #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.text-footer4 {
+	font-weight: 700;
+	font-size: 12px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.conpyright {
+	font-weight: 400;
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	margin-top: 50px;
+}
+
+.back-top {
+    color: #5ABF0B;
+    font-size: 25px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.back-top:hover {
+	color: #5ABF0B;
+}
+
+@media(max-width: 991px) {
+	.bg-footer2 {
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 450px) {
+	.back-top {
+		display: none;
+	}
+}
