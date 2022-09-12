@@ -16,7 +16,7 @@ get_header(); ?>
 		                ?>
 
 		                <div class="item">
-							<img class="img-lovenote" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo $image['alt'];?>">
+							<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo $image['alt'];?>">
 						</div>
 
 		       	    <?php endwhile; ?>

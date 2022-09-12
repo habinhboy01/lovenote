@@ -169,7 +169,7 @@
 	}
 
 	.text-lovenote p {
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	.text-lovenote i {
@@ -295,14 +295,21 @@
 
 .collection2 {
 	margin-top: 5%;
+	background-color: #e4dac3;
 }
 
 .img-collection {
 	margin-bottom: 26px;
 }
 
+#img-collection3 {
+    height: 554px;
+    object-fit: cover;
+}
+
 .collection3 {
 	text-align: left;
+	padding: 30px;
 }
 
 .text-collection a {
@@ -357,6 +364,18 @@
 	color: white;
 }
 
+@media(max-width: 1400px) {
+    #img-collection3 {
+        height: 606px;
+    }
+}
+
+@media(max-width: 1200px) {
+    #img-collection3 {
+        height: 660px;
+    }
+}
+
 @media(max-width: 991px) {
 	.collection3 {
 		margin-top: 40px;
@@ -371,9 +390,23 @@
 	.collection2 {
 		margin-top: 10%;
 	}
+
+	.collection3 {
+		padding: 15px;
+	}
+	
+	#img-collection3 {
+        height: auto;
+    }
 }
 
 /*QÙA TẶNG DOANH NGHIỆP*/
+
+.bg-gift2 {
+	background-color: #656812;
+	border-radius: 20px;
+	color: white;
+}
 
 .bg-gift {
 	text-align: center;
@@ -384,20 +417,20 @@
 .title-gift {
 	font-weight: 700;
 	font-size: 20px;
-	color: #656812;
+	/*color: #656812;*/
 }
 
 .text-gift {
 	font-weight: 400;
 	font-size: 45px;
-	color: black;
+	/*color: black;*/
 	margin: 20px 0;
 }
 
 .text-gift2 {
 	font-weight: 400;
 	font-size: 18px;
-	color: black;
+	/*color: black;*/
 }
 
 .text-gift3 {
@@ -449,6 +482,10 @@
 	.text-gift,
 	.text-gift3 a {
 		font-size: 25px;
+	}
+	
+	.text-gift2 {
+	    font-size: 14px;
 	}
 }
 
@@ -665,14 +702,14 @@
 }
 
 .pagination a {
-	border: 1px solid #5ABF0B;
+	border: 1px solid #656812;
 	color: white;
 	padding: 5px 12px;
 	margin: 0 5px;
 }
 
 .pagination span {
-	background: #5ABF0B;
+	background: #656812;
 	color: white;
 	padding: 5px 12px;
 	margin: 0 5px
@@ -1023,7 +1060,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5%;
-	padding-bottom: 15%;
 	margin-top: 5%;
 }
 
@@ -1329,7 +1365,7 @@
 .content-address2 h2 {
 	font-weight: 500;
 	font-size: 18px;
-	color: #5ABF0B;
+	color: #656812;
 }
 
 .content-address2 p {
@@ -1458,7 +1494,8 @@
 
 .date-publish {
 	font-size: 15px;
-	color: #5ABF0B;
+	color: #656812;
+	font-weight: 600;
 }
 
 .content-single {
@@ -1529,11 +1566,6 @@
 
 /*body trang the lovenote*/
 
-.img-lovenote {
-	height: 700px;
-	object-fit: cover;
-}
-
 .content-the-lovenote {
 	margin-top: 50px;
 	line-height: 2;
@@ -1550,30 +1582,6 @@
 	font-size: 17px;
 	font-weight: 400;
 	color: black;
-}
-
-@media(max-width: 1400px) {
-	.img-lovenote {
-		height: 500px;
-	}
-}
-
-@media(max-width: 1200px) {
-	.img-lovenote {
-		height: 445px;
-	}
-}
-
-@media(max-width: 991px) {
-	.img-lovenote {
-		height: 290px;
-	}
-}
-
-@media(max-width: 450px) {
-	.img-lovenote {
-		height: 155px;
-	}
 }
 
 /*body sidebar*/
@@ -1626,5 +1634,110 @@
     }
 }
 
+/*body trang cửa hàng*/
 
+.address-store {
+	height: 550px;
+    object-fit: cover;
+}
 
+.address-store2 {
+	font-weight: 700;
+    font-size: 24px;
+    color: #656812;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.address-store3 {
+	font-size: 16px;
+    font-weight: 400;
+    color: black;
+    padding: 0 15px;
+    line-height: 1.7;
+}
+
+.slider-btn{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 8px 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+ 
+/* setting the position of the previous button towards left */
+.previous {
+  left: 2%;
+}
+ /* setting the position of the next button towards right */
+.next {
+  right: 2%;
+}
+ 
+/* On hover, adding a background color */
+.previous:hover,
+.next:hover {
+  color: rgb(255, 253, 253);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media(max-width: 1400px) {
+	.address-store {
+		height: 500px;
+	}
+}
+
+@media(max-width: 991px) {
+	.address-store2,
+	.address-store3 {
+		padding: 0;
+	}
+
+	.address-store2 {
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 450px) {
+	.address-store {
+		height: 350px;
+	}
+}
+
+/*body trang điều khoản mua bán hàng*/
+
+.text-terms {
+	font-size: 16px;
+	color: black;
+	font-weight: 700;
+}
+
+.text-terms2,
+.text-terms3 {
+	color: black;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.text-terms3 {
+	line-height: 2;
+	padding-left: 15px;
+}
+
+.text-terms3 i {
+	font-size: 6px;
+	padding-right: 5px;
+}
+
+.text-terms4 {
+	margin-top: 20px;
+}

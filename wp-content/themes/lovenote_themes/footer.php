@@ -13,18 +13,13 @@
 			                $image = get_sub_field('img');
 			                ?>
 
-							<a href="<?php echo $link;?>">
+							<a href="<?php echo $link;?>" target="_blank">
 								<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo $image['alt'];?>">
 							</a>
 
 			       	    <?php endwhile; ?>
 					<?php endif; ?>
 
-					<?php 
-					$image = get_field('code-qr','option');
-	                if( !empty( $image ) ): ?>
-	                    <img class="code-qr" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-	                <?php endif; ?>
 				</div>
 			</div>
 
@@ -70,7 +65,7 @@
 			                ?>
 
 			                <li>
-								<a href="<?php echo $link;?>">
+								<a href="<?php echo $link;?>" target="_blank">
 									<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo $image['alt'];?>">
 								</a>
 							</li>
@@ -93,7 +88,7 @@
 			                ?>
 
 			                <li>
-								<a href="<?php echo $link;?>">
+								<a href="<?php echo $link;?>" target="_blank">
 									<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo $image['alt'];?>">
 								</a>
 							</li>
@@ -106,11 +101,16 @@
 			<div class="col-lg-3 col-md-6 col-12 bg-footer2">
 				<p class="text-footer"><?php echo get_field('useful-links', 'option'); ?></p>
 
-				<p class="text-footer4"><?php echo get_field('rules', 'option'); ?></p>
+				<?php if( have_rows('list-useful-links', 'option') ): ?>
+		            <?php while( have_rows('list-useful-links', 'option') ): the_row(); 
+		                $link = get_sub_field('link');
+		                ?>
+		                <p>
+		                	<a class="text-footer4" href="<?php echo $link['url'];?>"><?php echo get_sub_field('text'); ?></a>
+		                </p>
 
-				<p class="text-footer4"><?php echo get_field('policy', 'option'); ?></p>
-
-				<p class="text-footer4"><?php echo get_field('blog', 'option'); ?></p>
+		        	<?php endwhile; ?>
+				<?php endif; ?>
 
 				<p class="line-footer"></p>
 

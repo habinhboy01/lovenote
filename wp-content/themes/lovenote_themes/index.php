@@ -93,6 +93,7 @@ get_header(); ?>
 
 		<div class="collection">
 			<div class="container">
+				
 				<h2 class="title"><?php echo get_field('collection'); ?></h2>
 
 				<div class="owl-carousel owl-theme carousel_5 collection2">
@@ -113,7 +114,7 @@ get_header(); ?>
 							<div class="row">
 								<div class="col-lg-6 col-12">
 
-									<?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>
+									<?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'id' =>'img-collection3') ); ?>
 									
 								</div>
 
@@ -140,17 +141,22 @@ get_header(); ?>
 						</div>
 					<?php endwhile; wp_reset_postdata();?>
 				</div>
+				
 			</div>
 		</div>
 
 		<!-- QÙA TẶNG DOANH NGHIỆP -->
 
 		<div class="container bg-gift">
-			<h2 class="title-gift"><?php echo get_field('business-gifts'); ?></h2>
+			<div class="bg-gift2">
+				<div class="bg-product2">
+					<h2 class="title-gift"><?php echo get_field('business-gifts'); ?></h2>
 
-			<p class="text-gift"><?php echo get_field('description-gift'); ?></p>
+					<p class="text-gift"><?php echo get_field('description-gift'); ?></p>
 
-			<p class="text-gift2"><?php echo get_field('description-gift2'); ?></p>
+					<p class="text-gift2"><?php echo get_field('description-gift2'); ?></p>
+				</div>
+			</div>
 
 			<p class="text-gift3">
 				<a href="tel:+0705 168 568">
