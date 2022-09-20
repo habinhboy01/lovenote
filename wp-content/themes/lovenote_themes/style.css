@@ -163,6 +163,11 @@
 	font-weight: bold;
 }
 
+.menu-item-36 img {
+    width: 101px;
+    height: 83px;
+}
+
 .bg-header2 {
 	background: #656812;
 	border-bottom: 1px solid #E5C6A2;
@@ -287,6 +292,10 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	
+	.logo-mobile {
+	    width: 20%
+	}
 
 	.menu-mobile {
 		display: flex;
@@ -344,7 +353,8 @@
 
 @media(max-width: 450px) {
 	.logo-mobile {
-		width: 70%;
+		width: 70px;
+		height: 58px;
 	}
 
 	.menu-mobile2 a {
@@ -398,8 +408,14 @@
 	gap: 20px;
 }
 
+.list-social img {
+    width: 42px;
+    height: 42px;
+}
+
 .code-qr {
-	padding-left: 20px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .list-address {

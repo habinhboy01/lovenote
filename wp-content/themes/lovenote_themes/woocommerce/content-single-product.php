@@ -55,7 +55,7 @@ if ( post_password_required() ) {
 				<ul class="custom-price">
 					<li class="text-custom-price">Giá:</li>
 
-					<li class="text-custom-price2"><?php echo number_format($product->get_regular_price());?> VND</li>
+					<li class="text-custom-price2"><?php echo $product->get_price_html(); ?></li>
 				</ul>
 
 				<div class="custom-quantity">

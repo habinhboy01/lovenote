@@ -8,7 +8,7 @@ get_header(); ?>
 
 	<div class="bg-main">
 		<div class="container bg-category">
-			<h1 class="title text-category">Khuyến Mãi</h1>
+			<h1 class="title text-category"><?php echo get_cat_name( $category_id = 84 );?></h1>
 
 			<div class="row bg-category2">
 	            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -28,7 +28,7 @@ get_header(); ?>
 	                    'posts_per_page' => get_option('posts_per_page'),
 	                    'paged' => $paged,                       
 	                    'post_status' => 'publish',
-	                    'cat' => 22,
+	                    'cat' => 84,
 	                    'orderby' => 'dsc',
 	                    'orderby' => 'date' // modified | title | name | ID | rand
 	                )

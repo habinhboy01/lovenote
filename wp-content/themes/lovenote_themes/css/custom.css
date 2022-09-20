@@ -296,6 +296,7 @@
 .collection2 {
 	margin-top: 5%;
 	background-color: #e4dac3;
+	border-radius: 20px;
 }
 
 .img-collection {
@@ -305,6 +306,8 @@
 #img-collection3 {
     height: 554px;
     object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .collection3 {
@@ -379,6 +382,12 @@
 @media(max-width: 991px) {
 	.collection3 {
 		margin-top: 40px;
+	}
+	
+	#img-collection3 {
+	    border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: unset;
 	}
 }
 
@@ -720,6 +729,11 @@
 .bg-woo {
 	padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.woocommerce-breadcrumb a {
+    color: #656812;
+    font-weight: 600;
 }
 
 .bg-woo2 {
@@ -1592,6 +1606,10 @@
 	padding-right: 20px;
 }
 
+.category-product li {
+    margin-top: 20px;
+}
+
 .category-product a {
 	font-weight: bold;
     font-size: 18px;
@@ -1619,6 +1637,10 @@
 
 .sub-menu {
     padding-left: 20px;
+}
+
+.sub-menu li {
+    margin-top: 8px;
 }
 
 .sub-menu a {

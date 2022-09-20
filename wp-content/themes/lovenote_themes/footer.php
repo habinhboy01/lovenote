@@ -21,6 +21,12 @@
 					<?php endif; ?>
 
 				</div>
+				
+				<?php 
+				$image = get_field('img-qr','option');
+                if( !empty( $image ) ): ?>
+                    <img class="code-qr" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
 			</div>
 
 			<div class="col-lg-4 col-md-6 col-12 bg-footer2">
@@ -142,7 +148,6 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/aos.js"></script>
 
 <!-- My Js -->
-
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/tab-home.js"></script>
 
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/style.js"></script>
@@ -151,6 +156,35 @@
 <script>
   AOS.init();
 </script>
+<!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
 
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104960815551132");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 </html>
